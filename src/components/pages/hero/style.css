@@ -32,7 +32,6 @@
 
 .hero-title #variant-text {
     border-right: 1px solid var(--primary-color);
-    /* font-size: 2em; */
     height: 1em;
    
     margin: 0 auto;

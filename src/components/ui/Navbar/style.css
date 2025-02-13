@@ -86,12 +86,14 @@
 
 .megamenu .dropdown-menu {
     width: 100vw;
+    height: 100vh;
     border: none !important;
     border-radius: 0 !important;
     margin: 0 !important;
     left: 0 !important;
     right: 0 !important;
     background: var(--bg-fade-color);
+    overflow: scroll !important;
 }
 
 .dropdown-menu .dropdown-header {

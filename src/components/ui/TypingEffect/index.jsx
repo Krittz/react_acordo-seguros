@@ -34,7 +34,7 @@ const TypingEffect = () => {
   return (
     <span
       id="variant-text"
-      className="text-uppercase text-center fs-1 fw-semibold"
+      className="text-uppercase text-center fs-3 fw-bold"
     >
       {currentText}
     </span>

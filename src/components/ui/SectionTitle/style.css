@@ -1,0 +1,19 @@
+.section-title {
+    color: var(--text-color) !important;
+}
+
+.section-title::after {
+    position: absolute;
+    width: 55%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background: var(--primary-color);
+    filter: brightness(200%);
+}
+
+.section-subtitle {
+    color: var(--text-color);
+    opacity: 50%;
+}

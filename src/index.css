@@ -32,6 +32,7 @@
 
 body {
   scroll-behavior: smooth;
+  overflow-y: hidden;
   background: var(--bg-color) !important;
 }
 
@@ -62,4 +63,8 @@ ol {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
+}
+
+#services {
+  background: var(--bg-fade-color) !important;
 }

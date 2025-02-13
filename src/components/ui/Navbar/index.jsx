@@ -27,7 +27,7 @@ const Navbar = () => {
   ];
   const financiamentos = [{ value: "Automóveis", url: "http://" }];
   return (
-    <nav className="navbar navbar-expand-lg  w-100 z-3">
+    <nav className="navbar navbar-expand-lg z-3 w-100">
       <div className="container-fluid">
         <a className="navbar-brand">
           <img src="assets/images/logos/logo.svg" alt="Logo Acordo Seguros" />

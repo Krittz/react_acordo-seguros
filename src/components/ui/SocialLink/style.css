@@ -1,0 +1,29 @@
+.hero-links a {
+    transition: var(--transition);
+    color: var(--primary-color);
+}
+
+.hero-links a:hover {
+    transform: scale(1.4);
+    color: var(--primary-color-light);
+}
+
+.hero-links::after {
+    content: "";
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    background: var(--secondary-color);
+    width: 2px;
+    height: 130%;
+}
+
+.hero-links::before {
+    content: "";
+    position: absolute;
+    bottom: -90%;
+    left: 50%;
+    background: var(--secondary-color);
+    width: 2px;
+    height: 70%;
+}

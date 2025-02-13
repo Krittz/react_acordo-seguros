@@ -1,0 +1,10 @@
+.dropdown-item {
+    width: fit-content !important;
+    padding-block: 2.5px !important;
+}
+
+.dropdown-item:hover {
+    color: var(--primary-color) !important;
+    background: transparent !important;
+
+}

@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+    .bg-watermark {
+        display: none;
+    }
+}
+
+.bg-blur #bg-blur-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 25%;
+}
+
+.bg-blur #bg-blur-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 25%;
+}
+
+.bg-blur #bg-blur-3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 35%;
+}
+
+.bg-blur img {
+    pointer-events: none !important;
+    user-select: none !important;
+
+}
+
+.bg-watermark {
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    filter: grayscale(100%);
+    opacity: 10%;
+}

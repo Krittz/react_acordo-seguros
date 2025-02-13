@@ -1,0 +1,115 @@
+.navbar {
+    background: var(--bg-color) !important;
+    border-bottom: 1px solid var(--primary-color) !important;
+}
+
+
+.navbar-brand img {
+    max-width: 12rem !important;
+    filter: drop-shadow(0 0 5px #000);
+}
+
+
+.custom-toggler {
+    border: none !important;
+    background: none !important;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-toggler:focus,
+.custom-toggler:active {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 25px;
+    height: 15px;
+}
+
+.menu-icon span {
+    display: block;
+    height: 1px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.menu-icon span:nth-child(1) {
+    width: 90%;
+}
+
+.menu-icon span:nth-child(2) {
+    width: 70%;
+}
+
+.menu-icon span:nth-child(3) {
+    width: 90%;
+}
+
+.navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+    background: var(--secondary-color);
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .menu-icon span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    background: var(--secondary-color);
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+
+.nav-link {
+    color: var(--text-color) !important;
+    padding: 12px !important;
+    cursor: pointer;
+    margin: 4px;
+    transition: var(--transition) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar-nav .megamenu {
+    position: static !important;
+}
+
+.megamenu .dropdown-menu {
+    width: 100vw;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: var(--bg-fade-color);
+}
+
+.dropdown-menu .dropdown-header {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+@media (max-width: 1024px) {
+
+    .megamenu {
+        position: static !important;
+        width: 100vw !important;
+    }
+
+    .megamenu .dropdown-menu .container {
+        flex-direction: column !important;
+        overflow-x: hidden !important;
+        margin: 0;
+    }
+
+}

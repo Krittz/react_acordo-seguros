@@ -1,0 +1,91 @@
+.btn-primary {
+    position: relative;
+    background: var(--bg-color) !important;
+    color: var(--primary-color) !important;
+    text-transform: uppercase;
+    font-size: 1.5em !important;
+    width: fit-content !important;
+    padding: 10px 30px !important;
+    transition: var(--transition) !important;
+    outline: 1px solid var(--primary-color) !important;
+    border: none !important;
+    justify-self: center;
+    border-radius: 0 !important;
+}
+
+.btn-primary:hover {
+    letter-spacing: 1px;
+    box-shadow: 0 0 30px var(--primary-color) !important;
+    outline: 2px solid var(--primary-color) !important;
+}
+
+.btn-primary::before {
+    position: absolute !important;
+    content: "" !important;
+    inset: 2px !important;
+}
+
+.btn-primary span {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.btn-primary i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.btn-primary i::before {
+    content: "";
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    border: 2px solid var(--primary-color-light);
+    width: 1rem;
+    height: 7.5px;
+    background: var(--primary-color-light);
+    transition: var(--transition);
+}
+
+.btn-primary:hover i::before {
+    width: 2rem;
+    left: 20%;
+    background: var(--bg-color);
+}
+
+.btn-primary i::after {
+    content: "";
+    position: absolute;
+    bottom: -3.5px;
+    right: 80%;
+    border: 2px solid var(--primary-color-light);
+    width: 1rem;
+    height: 7.5px;
+    background: var(--primary-color-light);
+    transition: var(--transition);
+}
+
+.btn-primary:hover i::after {
+    width: 2rem;
+    right: 20%;
+    background: var(--bg-color);
+}
+
+.btn-secondary {
+    background: transparent !important;
+    color: var(--primary-color) !important;
+    transition: var(--transition) !important;
+    padding: 10px !important;
+    box-shadow: 0 0 0 1px var(--primary-color), 0 0 0 3px var(--bg-fade-color) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-top-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+}
+
+.btn-secondary:hover {
+    background: var(--bg-color) !important;
+    border-radius: 0 !important;
+    transform: scale(1.2);
+}
